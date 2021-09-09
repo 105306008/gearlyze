@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<!--
+	Caminar by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>三花棉業</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/static/three/css/main.css" />
+		<script src="../static/three/js/main.js"></script>
+		<script src="../static/three/js/util.js"></script>
+		<link rel="stylesheet" href="../static/three/css/main.css">
+		<link rel="stylesheet" href="../static/three/css/font-awesome.min.css">
+		<style>
+				body {
+					font-family:微軟正黑體;
+				}
+				select { -webkit-border-radius:25px;
+						-moz-border-radius:25px;
+						border-radius:25px;
+						background-color:white;
+						width:25%;
+						color: #2b2b2b;
+						font-family:微軟正黑體;
+				}
+				select:hover { border-color: #669b6f; }
+				table.center {
+					margin-left:auto;
+					margin-right:auto;
+					text-align:center;
+				}
+				table thead th { color: #2b2b2b; }
+				input { -webkit-border-radius:15px;
+						-moz-border-radius:15px;
+						border-radius:15px;
+						color: #2b2b2b;
+						width:100px;
+						text-align: center;}
+				button {
+						font-weight: bold;
+						font-size:110%;
+						font-family:微軟正黑體;
+				}
+
+
+
+		</style>
+		<link rel="stylesheet" href="../../../Desktop/HW/templated-caminar/assets/css/main.css">
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo" style = 'font-family:微軟正黑體;'><a href="#">三花棉業<span>產銷系統</span></a></div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+						<!--<div id="chart"></div>-->
+						<div class="image fit flush">
+							<img src="/static/images/photo01.png" alt="" />
+						</div>
+						<header class="special">
+							<h2>三花棉業產銷資訊系統</h2>
+							<p>Design by TEAM 3</p>
+						</header>
+						<div class="content" align="center">
+							<a href="#inv_header" class="button alt">存貨盤點</a>
+							<a href="#eq" class="button alt">生產預測</a>
+							<a href="#category_sales" class="button alt">品類銷售額</a>
+							<a href="#category_price" class="button alt">品類銷售量</a>
+							<a href="#product_price" class="button alt">品項銷售量</a>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="wrapper style2";>
+						<header id="inv_header">
+							<h2>存貨盤點</h2>
+							<p>INVENTORY</p>
+						</header>
+
+						<p>
+
+						<div align="center">
+							<pre style="display:inline;">　 </pre>
+							<select name="store" id="store" style="display:inline;">
+								<option value="">- 門市 -</option>
+								<option value="0001">文林門市</option>
+								<option value="0002">民生門市</option>
+								<option value="0003">西園門市</option>
+								<option value="0004">和平門市</option>
+								<option value="0005">石牌門市</option>
+								<option value="0006">東湖門市</option>
+								<option value="0007">信義門市</option>
+							</select>
+						　　<pre style="display:inline;"></pre>
+							<select name="category" id="category" style="display:inline;">
+								<option value="">- 品類 -</option>
+								<option value="襪子">襪子</option>
+								<option value="內褲">內褲</option>
+								<option value="內衣">內衣</option>
+								<option value="毛巾">毛巾</option>
+							</select>
+						　　<pre style="display:inline;"></pre>
+							<button id="amountCheck" class="button special" style="display:inline;">確認</button>
+						</div>
+						<p>
+						<div class="content">
+							<div class="table-wrapper">
+									<table class="center" bgcolor="#FFFFFF">
+										<thead  align="center" style="color:#353535;">
+										<tr><th id = 'invHead01'>產品ID</th>
+											<th id = 'invHead02'>產品名稱</th>
+											<th id = 'invHead03'>存貨數量</th>
+											<th id = 'invHead04'>最後盤點時間</th>
+											<th id = 'invHead05'>存貨狀態</th></tr>
+										</thead>
+										<tbody id="inventory">
+										</tbody>
+									</table>
+							</div>
+						</div>
+						<pre></pre>
+						<header id = 'eq'>
+							<h2>生產預測</h2>
+							<p>EOQ/EPQ</p>
+						</header>
+						<p>
+						<div align="center">
+							<div>
+								<p style = 'font-size:15px; color:white; ' >兒童襪子 <input type="number" name="eq01" id="eq01" value="0" />　
+								運動襪子 <input type="number" name="eq02" id="eq02" value="0" />　
+								休閒襪子 <input type="number" name="eq03" id="eq03" value="0" />　
+								五指襪子 <input type="number" name="eq04" id="eq04" value="0" />　</p>
+								<p style = 'font-size:15px; color:white; display:inline-block;' >
+								男用三角內褲 <input type="number" name="eq05" id="eq05" value="0" />　
+								男用四角內褲 <input type="number" name="eq06" id="eq06" value="0" />　
+								女用內褲 <input type="number" name="eq07" id="eq07" value="0" /> </p>
+								<br>
+								<button id="orderInput" class="button special" >訂單輸入</button>
+							</div>
+							<br>
+							<div style = 'color:white;'>
+								<h1 id = 'halfHead1' style = 'color:white;'></h1>
+								<p id = 'half1'></p>
+								<h1 id = 'halfHead2' style = 'color:white;'></h1>
+								<p id = 'half2' ></p>
+								<h1 id = 'matHead1' style = 'color:white;'></h1>
+								<p id = 'mat1' ></p>
+								<h1 id = 'matHead2' style = 'color:white;'></h1>
+								<p id = 'mat2'></p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper">
+						<div id = 'category_sales' class="spotlight">
+							<div id = 'chart01' class="image flush" style='background-color:#343434'></div>
+							<div class="inner">
+								<p id = test></p>
+								<h3>品類各年度銷售額比分析</h3>
+									<select name="saleYear01" id="saleYear01" style="display:inline;">
+										<option value="">- 年份 -</option>
+										<option value="2018">2018</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+									</select><br><br>
+									<select name="saleStore01" id="saleStore01" style="display:inline;">
+										<option value="">- 門市 -</option>
+										<option value="文林門市">文林門市</option>
+										<option value="民生門市">民生門市</option>
+										<option value="西園門市">西園門市</option>
+										<option value="和平門市">和平門市</option>
+										<option value="石牌門市">石牌門市</option>
+										<option value="東湖門市">東湖門市</option>
+										<option value="信義門市">信義門市</option>
+									</select><br><br>
+									<select name="saleCategory01" id="saleCategory01" style="display:inline;">
+										<option value="">- 品類 -</option>
+										<option value="襪子">襪子</option>
+										<option value="內褲">內褲</option>
+										<option value="內衣">內衣</option>
+										<option value="毛巾">毛巾</option>
+									</select><br><br>
+								<button id="chartInput01" class="button special" >確認</button>
+
+							</div>
+						</div>
+						<div id = 'category_price' class="spotlight alt">
+							<div id = 'pie01' class="image flush"></div>
+							<div  class="inner">
+								<h3>品類各年度銷售量比分析</h3>
+								<select name="saleYear02" id="saleYear02" style="display:inline;">
+									<option value="">- 年份 -</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+								</select><br><br>
+								<select name="saleStore02" id="saleStore02" style="display:inline;">
+									<option value="">- 門市 -</option>
+									<option value="文林門市">文林門市</option>
+									<option value="民生門市">民生門市</option>
+									<option value="西園門市">西園門市</option>
+									<option value="和平門市">和平門市</option>
+									<option value="石牌門市">石牌門市</option>
+									<option value="東湖門市">東湖門市</option>
+									<option value="信義門市">信義門市</option>
+								</select><br><br>
+								<select name="saleCategory02" id="saleCategory02" style="display:inline;">
+									<option value="">- 品類 -</option>
+									<option value="襪子">襪子</option>
+									<option value="內褲">內褲</option>
+									<option value="內衣">內衣</option>
+									<option value="毛巾">毛巾</option>
+								</select><br><br>
+								<button id="pieInput01" class="button special" >確認</button>
+							</div>
+						</div>
+						<div id = 'product_price' class="spotlight">
+							<div id = 'pie02' class="image flush"></div>
+							<div class="inner">
+								<h3>品項各季銷售量比分析</h3>
+								<!--<p id = test></p>-->
+								<select name="saleYear03" id="saleYear03" style="display:inline;">
+									<option value="">- 年份 -</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+									<option value="2016">2016</option>
+									<option value="2015">2015</option>
+								</select><br><br>
+								<select name="saleStore03" id="saleStore03" style="display:inline;">
+									<option value="">- 門市 -</option>
+									<option value="文林門市">文林門市</option>
+									<option value="民生門市">民生門市</option>
+									<option value="西園門市">西園門市</option>
+									<option value="和平門市">和平門市</option>
+									<option value="石牌門市">石牌門市</option>
+									<option value="東湖門市">東湖門市</option>
+									<option value="信義門市">信義門市</option>
+								</select><br><br>
+								<select name="saleCategory03" id="saleCategory03" style="display:inline;" onChange="renew(this.selectedIndex-1);">
+									<option value="">- 品類 -</option>
+									<option value="襪子">襪子</option>
+									<option value="內褲">內褲</option>
+									<option value="內衣">內衣</option>
+									<option value="毛巾">毛巾</option>
+								</select><br><br>
+								<select name="saleProduct03" id="saleProduct03" style="display:inline;">
+									<option value="">- 品項 -</option>
+								</select><br><br>
+								<button id="pieInput02" class="button special" >確認</button></div>
+						</div>
+
+					</section>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved. Images <a href="https://unsplash.com">Unsplash</a> Design <a href="https://templated.co">TEMPLATED</a>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/jquery.poptrox.min.js"></script>
+			<script src="/static/js/skel.min.js"></script>
+			<script src="/static/js/util.js"></script>
+			<script src="/static/js/main.js"></script>
+			<script src="/static/js/TableTest.js"></script>
+			<script src="/static/js/eqGet.js"></script>
+			<script src="/static/js/Pie01.js"></script>
+			<script src="/static/js/Pie02.js"></script>
+			<script src="/static/js/chart01.js"></script>
+			<script>
+				products=new Array();
+            products[0]=["- 品項 -","兒童襪子", "運動襪子", "休閒襪子", "五指襪子"];	// 襪子
+            products[1]=["- 品項 -","男用三角內褲", "男用四角內褲", "女用內褲"];	// 內褲
+
+            function renew(index){
+                for(var i=0;i<products[index].length;i++)
+                    document.getElementById('saleProduct03').options[i]=new Option(products[index][i], products[index][i]);	// 設定新選項
+                document.getElementById('saleProduct03').length=products[index].length;	// 刪除多餘的選項
+            }
+			</script>
+
+
+
+		<!-- ChartScripts -->
+			<script src="https://code.highcharts.com/highcharts.js"></script>
+			<script src="https://code.highcharts.com/modules/series-label.js"></script>
+			<script src="https://code.highcharts.com/modules/exporting.js"></script>
+			<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+		<!-- PieScripts -->
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+			<script src="https://code.highcharts.com/highcharts.js"></script>
+			<script src="https://code.highcharts.com/modules/exporting.js"></script>
+			<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+
+
+
+
+	</body>
+</html>

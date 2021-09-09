@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>文庫搜索 - GearLyze</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<meta http-equiv="Page-Enter" content="revealTrans(Duration=5.0,Transition=12)">
+	</head>
+	<style>
+			body{
+				font-family:微軟正黑體;
+			}
+		</style>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="/" class="logo"><strong>Produced</strong> by 9A</a>
+					<nav id="nav">
+						 <a href="/">Home</a>
+						<a href="/search">AnaLyze</a>
+						<a href="/article">Article</a>
+						<a href="/tutorial">Guide</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<br class="inner">
+					<header class="align-center">
+						<p id="test"></p>
+						<h2>文庫搜索</h2>
+						<p>輸入想要查閱的關鍵字吧！</p>
+					</header>
+
+						<div style="text-align: center">
+							<div class="12u$">
+									<div class="select-wrapper">
+										<p>從：
+										<input id="year" type="text" placeholder="西元年" onkeyup="value=value.replace(/[^\d]/g,'') " value="2019" style="margin: 0 1em 0 1em;display: inline-block;width:5.5%">年
+										<input id="month" type="text" placeholder="月" onkeyup="value=value.replace(/[^\d]/g,'') " value="12" style="margin: 0 1em 0 1em;display: inline-block;width:4.5%">月
+										<input id="day" type="text" placeholder="日" onkeyup="value=value.replace(/[^\d]/g,'') " value="09" style="margin: 0 1em 0 1em;display: inline-block;width:4.5%">日
+										（往舊）</p>
+									</div>
+								</div>
+							<div class="field half search" style="margin: 0 1.5em 2em 0;display: inline-block;width:50%">
+								<input id="keyword" type="text" placeholder="Search">
+							</div>
+							<ul>
+								<button id="article_ajax" value="Start!" class="button alt" type="submit">Start!</button>
+							</ul>
+						</div>
+						<div align="center">
+							<br id="loading_br"  style="display: none">
+							<div id="loading" class="lds-roller" style="display: none"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+							<div id="noData"></div>
+							<p style="font-size: 12px">文章來源：<br>Juksy街星、CooL-Style潮流生活網、NOWRE現客、ELLE、<br>勘履者、Bella、運動視界、DEADSTOCK、動網、PTT實業坊</p>
+						</div>
+						<div  align="center">
+							<div id="article_page" align="left" style="margin: 10vh 20vw 10vh 20vw">
+<!--								<p><a href="#">TEST</a>TEST</p>-->
+							</div>
+						</div>
+						<br>
+						<div style="text-align: center;margin-left: 3em;">
+							<ul id="pagination" class="pagination">
+<!--							  <li><a class="active" href="#">«</a></li>-->
+<!--							  <li><a href="#">1</a></li>-->
+<!--							  <li><a href="#">2</a></li>-->
+<!--							  <li><a href="#">3</a></li>-->
+<!--							  <li><a href="#">4</a></li>-->
+<!--							  <li><a href="#">5</a></li>-->
+<!--							  <li><a href="#">»</a></li>-->
+							</ul>
+						</div>
+					<br>
+
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/skel.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+			<script src="../static/assets/js/article_ajax.js"></script>
+<!--			<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>-->
+<!--			<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>-->
+
+			<script>
+
+
+			</script>
+
+
+	</body>
+</html>
